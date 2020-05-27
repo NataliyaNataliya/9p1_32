@@ -25,9 +25,9 @@ namespace WindowsFormsApp1
         private void buttonCloseApp_Click(object sender, EventArgs e)
         {
             double seconds = Convert.ToDouble(textBoxCloseApp.Text) * 1000;
-            System.Timers.Timer timer = new System.Timers.Timer(seconds);
-            timer.Elapsed += Timer_Elapsed;
-            timer.Start();
+            System.Timers.Timer timerClose = new System.Timers.Timer(seconds);
+            timerClose.Elapsed += Timer_Elapsed;
+            timerClose.Start();
         }
 
         private static void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
