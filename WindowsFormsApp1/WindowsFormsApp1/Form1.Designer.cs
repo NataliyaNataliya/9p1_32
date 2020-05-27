@@ -34,6 +34,8 @@
             this.buttonChangeColor = new System.Windows.Forms.Button();
             this.labelChangeColor = new System.Windows.Forms.Label();
             this.groupBoxChangeColor.SuspendLayout();
+            this.textBoxCloseApp = new System.Windows.Forms.TextBox();
+            this.buttonCloseApp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonClick
@@ -95,6 +97,22 @@
             this.labelChangeColor.Size = new System.Drawing.Size(45, 17);
             this.labelChangeColor.TabIndex = 2;
             this.labelChangeColor.Text = "Color:";
+            // textBoxCloseApp
+            // 
+            this.textBoxCloseApp.Location = new System.Drawing.Point(319, 343);
+            this.textBoxCloseApp.Name = "textBoxCloseApp";
+            this.textBoxCloseApp.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCloseApp.TabIndex = 1;
+            // 
+            // buttonCloseApp
+            // 
+            this.buttonCloseApp.Location = new System.Drawing.Point(319, 370);
+            this.buttonCloseApp.Name = "buttonCloseApp";
+            this.buttonCloseApp.Size = new System.Drawing.Size(100, 23);
+            this.buttonCloseApp.TabIndex = 2;
+            this.buttonCloseApp.Text = "Close App";
+            this.buttonCloseApp.UseVisualStyleBackColor = true;
+            this.buttonCloseApp.Click += new System.EventHandler(this.buttonCloseApp_Click);
             // 
             // Form1
             // 
@@ -102,13 +120,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.groupBoxChangeColor);
+            this.Controls.Add(this.buttonCloseApp);
+            this.Controls.Add(this.textBoxCloseApp);
             this.Controls.Add(this.buttonClick);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBoxChangeColor.ResumeLayout(false);
             this.groupBoxChangeColor.PerformLayout();
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -119,6 +141,8 @@
         private System.Windows.Forms.Label labelChangeColor;
         private System.Windows.Forms.Button buttonChangeColor;
         private System.Windows.Forms.ComboBox comboBoxChangeColor;
+        private System.Windows.Forms.TextBox textBoxCloseApp;
+        private System.Windows.Forms.Button buttonCloseApp;
     }
 }
 
