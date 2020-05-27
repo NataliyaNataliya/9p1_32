@@ -29,6 +29,19 @@ namespace WindowsFormsApp1
             MessageBox.Show("Дмитрий лучший преподаватель в мире :)!","Инфо",MessageBoxButtons.OK,MessageBoxIcon.Warning);
         }
 
+        private void buttonCloseApp_Click(object sender, EventArgs e)
+        {
+            double seconds = Convert.ToDouble(textBoxCloseApp.Text) * 1000;
+            System.Timers.Timer timerClose = new System.Timers.Timer(seconds);
+            timerClose.Elapsed += Timer_Elapsed;
+            timerClose.Start();
+        }
+
+        private static void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            Application.Exit();
+        }
+        
         public void AddStatusStrip()
         {
             StatusStrip ss = new StatusStrip();
@@ -48,7 +61,5 @@ namespace WindowsFormsApp1
             
             timeLabel.Text = DateTime.Now.ToLongTimeString();
         }
-
-       
     }
 }
