@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.buttonClick = new System.Windows.Forms.Button();
+            this.textBoxCloseApp = new System.Windows.Forms.TextBox();
+            this.buttonCloseApp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonClick
@@ -41,21 +43,43 @@
             this.buttonClick.UseVisualStyleBackColor = true;
             this.buttonClick.Click += new System.EventHandler(this.buttonClick_Click);
             // 
+            // textBoxCloseApp
+            // 
+            this.textBoxCloseApp.Location = new System.Drawing.Point(319, 343);
+            this.textBoxCloseApp.Name = "textBoxCloseApp";
+            this.textBoxCloseApp.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCloseApp.TabIndex = 1;
+            // 
+            // buttonCloseApp
+            // 
+            this.buttonCloseApp.Location = new System.Drawing.Point(319, 370);
+            this.buttonCloseApp.Name = "buttonCloseApp";
+            this.buttonCloseApp.Size = new System.Drawing.Size(100, 23);
+            this.buttonCloseApp.TabIndex = 2;
+            this.buttonCloseApp.Text = "Close App";
+            this.buttonCloseApp.UseVisualStyleBackColor = true;
+            this.buttonCloseApp.Click += new System.EventHandler(this.buttonCloseApp_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonCloseApp);
+            this.Controls.Add(this.textBoxCloseApp);
             this.Controls.Add(this.buttonClick);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button buttonClick;
+        private System.Windows.Forms.TextBox textBoxCloseApp;
+        private System.Windows.Forms.Button buttonCloseApp;
     }
 }
 
