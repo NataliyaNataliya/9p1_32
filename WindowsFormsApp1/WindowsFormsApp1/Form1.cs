@@ -62,6 +62,7 @@ namespace WindowsFormsApp1
                     this.BackColor = Color.Pink;
                     break;
             }
+        }
         private void buttonCloseApp_Click(object sender, EventArgs e)
         {
             double seconds = Convert.ToDouble(textBoxCloseApp.Text) * 1000;
