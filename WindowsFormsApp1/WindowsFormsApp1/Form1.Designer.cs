@@ -29,24 +29,38 @@
         private void InitializeComponent()
         {
             this.buttonClick = new System.Windows.Forms.Button();
+            this.CurPathInfoButtonTymoshenko = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonClick
             // 
-            this.buttonClick.Location = new System.Drawing.Point(180, 205);
+            this.buttonClick.Location = new System.Drawing.Point(240, 252);
+            this.buttonClick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonClick.Name = "buttonClick";
-            this.buttonClick.Size = new System.Drawing.Size(75, 23);
+            this.buttonClick.Size = new System.Drawing.Size(100, 28);
             this.buttonClick.TabIndex = 0;
             this.buttonClick.Text = "Click me!";
             this.buttonClick.UseVisualStyleBackColor = true;
             this.buttonClick.Click += new System.EventHandler(this.buttonClick_Click);
             // 
+            // CurPathInfoButtonTymoshenko
+            // 
+            this.CurPathInfoButtonTymoshenko.Location = new System.Drawing.Point(799, 487);
+            this.CurPathInfoButtonTymoshenko.Name = "CurPathInfoButtonTymoshenko";
+            this.CurPathInfoButtonTymoshenko.Size = new System.Drawing.Size(232, 41);
+            this.CurPathInfoButtonTymoshenko.TabIndex = 1;
+            this.CurPathInfoButtonTymoshenko.Text = "Current Path Information";
+            this.CurPathInfoButtonTymoshenko.UseVisualStyleBackColor = true;
+            this.CurPathInfoButtonTymoshenko.Click += new System.EventHandler(this.CurPathInfoButtonTymoshenko_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.CurPathInfoButtonTymoshenko);
             this.Controls.Add(this.buttonClick);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -56,6 +70,7 @@
         #endregion
 
         private System.Windows.Forms.Button buttonClick;
+        private System.Windows.Forms.Button CurPathInfoButtonTymoshenko;
     }
 }
 
