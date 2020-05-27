@@ -33,9 +33,10 @@
             // 
             // buttonClick
             // 
-            this.buttonClick.Location = new System.Drawing.Point(180, 205);
+            this.buttonClick.Location = new System.Drawing.Point(240, 252);
+            this.buttonClick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonClick.Name = "buttonClick";
-            this.buttonClick.Size = new System.Drawing.Size(75, 23);
+            this.buttonClick.Size = new System.Drawing.Size(100, 28);
             this.buttonClick.TabIndex = 0;
             this.buttonClick.Text = "Click me!";
             this.buttonClick.UseVisualStyleBackColor = true;
@@ -43,12 +44,14 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.buttonClick);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
